@@ -35,7 +35,7 @@ package main
 import(
 	"github.com/goji/glogrus2"
     "goji.io"
-    "golang.org/x/net/context"
+    "github.com/gorilla/context"
     "net/http"
     "github.com/Sirupsen/logrus"
 )
@@ -49,8 +49,8 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
-func IdFromContext(ctx context.Context) string {
-    return ctx.Value("requestIdKey")
+func IdFromContext(r *http.Request) string {
+    return context.Get(r, "requestIdKey")
 }
 ```
 - - -
