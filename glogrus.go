@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"time"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"goji.io"
 	"golang.org/x/net/context"
 )
@@ -20,7 +20,7 @@ import (
 //		import(
 //			""goji.io"
 //			"github.com/goji/glogrus2"
-//			"github.com/Sirupsen/logrus"
+//			"github.com/sirupsen/logrus"
 //		)
 //
 //		func main() {
@@ -51,7 +51,7 @@ func NewGlogrus(l *logrus.Logger, name string) func(goji.Handler) goji.Handler {
 //		import(
 //			""goji.io"
 //			"github.com/goji/glogrus2"
-//			"github.com/Sirupsen/logrus"
+//			"github.com/sirupsen/logrus"
 //		)
 //
 //		func main() {

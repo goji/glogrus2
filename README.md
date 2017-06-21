@@ -13,7 +13,7 @@ import(
 	"github.com/goji/glogrus2"
     "goji.io"
     "net/http"
-    "github.com/Sirupsen/logrus"
+    "github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -37,7 +37,7 @@ import(
     "goji.io"
     "golang.org/x/net/context"
     "net/http"
-    "github.com/Sirupsen/logrus"
+    "github.com/sirupsen/logrus"
 )
 
 func main() {
