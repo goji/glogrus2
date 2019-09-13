@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"time"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"goji.io"
 	"golang.org/x/net/context"
 )
